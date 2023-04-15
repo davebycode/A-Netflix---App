@@ -1,0 +1,38 @@
+:root {
+    --color1: black;
+    --color2: white;
+    --color3: gray;
+    --color4: blue;
+}
+.profile {
+    background-color: var(--color1);
+    color: var(--color2);
+    display: flex;
+    padding: 5% 5%;
+    /* flex-direction: row-reverse; */
+    margin-top: 1rem;
+}
+.main-texts {
+    width: 47%;
+    margin-left: 10%;
+    
+    font-weight: bolder;
+}
+.main-texts h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.main-texts h3 {
+    font-weight: bolder;
+}
+.pix {
+    display: flex;
+    justify-content: flex-start;
+    /* margin-left: -3%; */
+    /* padding-left: -15%; */
+}
+.profile-pix {
+    width: 50%;
+    height: 60%;
+    
+}

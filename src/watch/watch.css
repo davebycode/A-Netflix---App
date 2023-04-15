@@ -1,0 +1,64 @@
+:root {
+    --color1: black;
+    --color2: white;
+    --color3: gray;
+    --color4: blue;
+}
+.watcher {
+    background-color: var(--color1);
+    color: var(--color2);
+    margin-top: 1rem;
+    padding: 7% 0 7% 0;
+    width: 100%;
+    font-weight: bolder;
+    
+}
+.watchers {
+    width: 36%;
+}
+.watchers h1 {
+    font-size: 3rem;
+}
+.watchers h3 {
+    margin-top: -7%;
+}
+@media screen  and (min-width:250px) and (max-width:1020px){
+    .watcher {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .watchers {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+    .watchers h1 {
+        font-size: 2.5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .watchers h3 {
+        padding-left: 1.5rem;
+        padding-top: 2.5rem ;
+        padding-right: 1rem;
+        font-size: 1.7rem;
+    }
+}
+@media screen and (min-width:1250px) and (max-width:3000px){
+    .watchers {
+        padding-left: 4.5rem;
+    }
+    .watchers h1 {
+        font-size: 4rem;
+    }
+    .watchers h3 {
+        font-size: 2.3rem;
+        padding-top: 1rem;
+        font-weight: bold;
+        
+    }
+}

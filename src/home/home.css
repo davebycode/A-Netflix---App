@@ -1,0 +1,167 @@
+:root {
+    --color:rgb(229, 9, 20,1);
+    --color5: rgba(45,45,45);    
+}
+.navbar{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0rem 1rem 1rem;
+    }
+    .navbar h1 {
+        color: var(--color);
+        font-size: 3rem;
+    }
+    .navbar button {
+        background-color: var(--color);
+        color: white;
+        padding: 0.5rem 0.5rem;
+        border-radius: 5px;
+        font-weight: bolder;
+        border: none;
+        margin-right: 1%;
+        font-size: 2.5rem;
+        /* font-size: 4rem; */
+
+}     
+    .styles{
+      margin: 0;
+      
+    }
+    .home-text{
+        color: white;
+        font-weight: bolder;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-top: 11%;
+
+    } 
+    .home-text h3 {
+        font-weight: bold;
+        margin-top: -1%;
+        /* font-size: 11rem; */
+    }
+    .home-text h4 {
+        font-weight: lighter;
+        padding-top: 0.1%;
+        text-decoration: none;
+    }
+     .nav-email input {
+        height: 8vh;
+        width: 38%;
+        background: var(--color5);
+        margin-left: 3%;
+        border-radius: 5px;
+        color: white;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.512);
+        border-style: solid;
+        border-color: gray;
+        outline: thick;
+        outline-style: solid;
+        outline-color: white;
+        outline-width: 1px;
+        border-width: 0.2rem;
+        line-height: 50px;
+        text-indent: -1px;
+        border-inline-color: red;
+        border-inline-width: 2px;  
+        padding: 1rem;      
+        border: none;
+        position: relative;
+        text-align: start;
+    }
+     .nav-email label {
+        position: relative;
+        left: -39%;
+        font-size: 2rem;
+        font-weight: bold;
+        transition: 0.2s ease;
+        transition-delay: 10s;
+        line-height: 5px;
+        
+    }
+    .nav-email button {
+        position: relative;
+        height: 12vh;
+        width: 17vw;
+        left: -12%;
+        font-weight: bolder;
+        padding: 0.1rem 0.3rem;
+        border-radius: 5px;
+        color: white;
+        top: 2px;
+        margin: 0;
+        font-size: 1.7rem;
+        border: none;
+        text-align: center;
+        background-color: var(--color);
+
+    }
+    .nav-email input:focus +label {
+        top: -17px;
+        pointer-events: none;
+        
+    }  
+    .nav-email span {
+        position: relative;
+        transition: 0.2s ease;
+        font-size: 0.5rem;
+        text-align: left;
+        left: -7%;
+        top: -22px;
+    }
+    .nav-email input:focus ~ .nav-email label
+      {
+        left: -10%;
+    }
+ @media  screen and (min-width:250px) and (max-width:550px) {
+    .navbar {
+        margin-top: -9%;
+    }
+    .navbar h1{
+        font-size: 2.5rem; 
+    }
+    .navbar button {
+        font-size: 1.3rem;
+    }
+    .home-text h4 {
+        font-size: 1.3rem;
+        margin-top: -2%;
+    }
+    .nav-email input {
+        width: 70vw;
+        height: 5vh;
+    }
+    .nav-email label {
+        margin-left: -35%;
+        font-size: 1.7rem;
+    }
+    .nav-email button {
+        margin-top: 4%;
+        width: 60vw;
+        margin-left: 12%;
+        height: 9vh;
+    }
+ }
+ @media screen and (min-width:600px) and (max-width:850px) {
+    .navbar {
+        margin-top: -5%;
+    }
+    .navbar button {
+        font-size: 1.6rem;
+    }
+    .home-text h4 {
+        font-size:1.5rem;
+        margin-top: -2%;      
+     }
+    .home-text h3 {
+        font-size: 1.5rem;
+    }
+    .nav-email input {
+        width: 45vw;
+        margin-left: -2%;
+        height: 5vh;
+    }
+ }

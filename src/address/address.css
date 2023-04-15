@@ -1,0 +1,50 @@
+:root {
+    --color1: black;
+    --color2: white;
+    --color3: gray;
+    --color4: blue;
+    --color5: rgba(45,45,45);
+    --color6:  rgb(86, 83, 83);
+    --color7:  rgba(255, 255, 255, 0.7);
+}
+.twice {
+    background-color: var(--color1);
+    margin-top: 1rem;
+    color: var(--color7);
+    padding: 5rem;
+}
+h4 {
+    text-decoration: underline;
+    text-decoration-color: var(--color2);
+    text-decoration-thickness: 0.5px;
+}
+.first {
+    display: flex;
+    justify-content:flex-start;
+    gap: 9.5rem;
+}
+select {
+    padding: 0.4rem 1rem;
+    font-weight: bold;
+    background-color: var(--color1);
+    color: var(--color2);
+    margin-top: 2rem;
+    border-radius: 5px;
+    appearance:none;
+    position: relative;
+}
+select::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    color: yellow;
+    height: 10rem;
+    width: 10rem;
+    top: 0;
+    font-size: 5rem;
+
+        
+}
+.texting {
+    text-decoration: none;
+}
