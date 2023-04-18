@@ -1,33 +1,27 @@
-:root {
-    --color:rgb(229, 9, 20,1);
-    --color5: rgba(45,45,45);    
-}
-.navbar{
+/* .styles {
+    width: 100vw;
+    height: 100vh;
+  } */
+  .navbar{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 1rem 0rem 1rem 1rem;
+    margin-top: 1%;
     }
     .navbar h1 {
         color: var(--color);
-        font-size: 3rem;
+        font-size: 7rem;
     }
     .navbar button {
         background-color: var(--color);
         color: white;
-        padding: 0.5rem 0.5rem;
+        padding: 1rem 1rem;
         border-radius: 5px;
         font-weight: bolder;
         border: none;
         margin-right: 1%;
-        font-size: 2.5rem;
-        /* font-size: 4rem; */
-
-}     
-    .styles{
-      margin: 0;
-      
-    }
+        font-size: 4.2rem;
+  }     
     .home-text{
         color: white;
         font-weight: bolder;
@@ -36,26 +30,34 @@
         justify-content: center;
         align-items: center;
         padding-top: 11%;
-
+  
     } 
+    .home-text h1 {
+      font-size: 8rem;
+    }
     .home-text h3 {
         font-weight: bold;
         margin-top: -1%;
-        /* font-size: 11rem; */
+        font-size: 6rem;
     }
     .home-text h4 {
         font-weight: lighter;
-        padding-top: 0.1%;
         text-decoration: none;
+        margin-top: -1%;
+        font-size: 5rem;
+    }
+    .nav-email {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
      .nav-email input {
         height: 8vh;
-        width: 38%;
+        width: 36%;
         background: var(--color5);
         margin-left: 3%;
         border-radius: 5px;
         color: white;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.512);
         border-style: solid;
         border-color: gray;
         outline: thick;
@@ -63,105 +65,159 @@
         outline-color: white;
         outline-width: 1px;
         border-width: 0.2rem;
-        line-height: 50px;
-        text-indent: -1px;
         border-inline-color: red;
         border-inline-width: 2px;  
         padding: 1rem;      
         border: none;
         position: relative;
         text-align: start;
+        font-size: 3rem;
     }
      .nav-email label {
         position: relative;
-        left: -39%;
-        font-size: 2rem;
+        left: -36%;
+        font-size: 4rem;
         font-weight: bold;
         transition: 0.2s ease;
         transition-delay: 10s;
         line-height: 5px;
-        
     }
     .nav-email button {
-        position: relative;
-        height: 12vh;
-        width: 17vw;
-        left: -12%;
+        height: 10vh;
+        width: 15vw;
         font-weight: bolder;
         padding: 0.1rem 0.3rem;
         border-radius: 5px;
         color: white;
-        top: 2px;
-        margin: 0;
-        font-size: 1.7rem;
+        font-size: 3.7rem;
         border: none;
+        margin-left: -8%;
         text-align: center;
         background-color: var(--color);
-
+  
     }
     .nav-email input:focus +label {
-        top: -17px;
-        pointer-events: none;
-        
-    }  
-    .nav-email span {
-        position: relative;
-        transition: 0.2s ease;
-        font-size: 0.5rem;
-        text-align: left;
-        left: -7%;
-        top: -22px;
+        top: -59px;
+      
     }
-    .nav-email input:focus ~ .nav-email label
-      {
-        left: -10%;
+  @media  screen and (orientation:portrait) {
+    .styles {
+      width: 100vw;
+      overflow: hidden;
     }
- @media  screen and (min-width:250px) and (max-width:550px) {
+    .home-text h1 {
+        font-size: 2.3rem;
+    }
+    .home-text h3 {
+        font-size: 1.8rem;
+    }
     .navbar {
-        margin-top: -9%;
+        margin-top: -6%;
     }
     .navbar h1{
-        font-size: 2.5rem; 
+        font-size: 3rem; 
     }
     .navbar button {
         font-size: 1.3rem;
     }
     .home-text h4 {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         margin-top: -2%;
     }
+    .nav-email {
+        display: flex;
+        flex-direction: column;
+    }
     .nav-email input {
-        width: 70vw;
+        width: 65vw;
         height: 5vh;
+        font-size: 1.5rem;
+        margin-top: -5%;
     }
     .nav-email label {
-        margin-left: -35%;
-        font-size: 1.7rem;
+        margin-left: 42%;
+        font-size: 1.2rem;
+        margin-top: -8%;
+    }
+    .nav-email input:focus + label {
+        top: -30px;
+    } 
+    .nav-email button {
+        margin-top: 10%;
+        width: 70vw;
+        font-size: 1.5rem;
+        height: 7vh;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 3%;
+    }
+  }
+  @media  (600px <= width <= 850px){
+    .navbar {
+        margin-top: 1%;
+    }
+    .home-text h1 {
+        font-size: 4rem;
+    }
+    .home-text h3 {
+        font-size: 3.4rem;
+    }
+    .home-text h4 {
+        font-size: 3rem;
+    }
+    .nav-email label {
+        font-size: 2rem;
+    }
+    .nav-email input {
+        height: 11vw;
+        font-size: 1.6rem;
     }
     .nav-email button {
-        margin-top: 4%;
-        width: 60vw;
-        margin-left: 12%;
-        height: 9vh;
+        font-size: 2rem;
     }
- }
- @media screen and (min-width:600px) and (max-width:850px) {
+  }
+  @media (1020px <= width <= 2000px) {
     .navbar {
-        margin-top: -5%;
+        margin-top: -1%;
     }
     .navbar button {
         font-size: 1.6rem;
     }
+    .navbar h1 {
+        font-size: 3rem;
+    }
     .home-text h4 {
-        font-size:1.5rem;
+        font-size:2rem;
         margin-top: -2%;      
      }
     .home-text h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    .home-text h1 {
+        font-size: 3rem;
+    }
+    .nav-email {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .nav-email input {
         width: 45vw;
-        margin-left: -2%;
-        height: 5vh;
+        height: 8vh;
     }
- }
+    .nav-email label {
+       text-align: left;
+       margin-left: -8%;
+        font-size: 1.5rem;
+    }
+    .nav-email button {
+        width: 39vw;
+        margin-left: -1%;
+        font-size: 2rem;
+        height: 14vh;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    
+  }
+  

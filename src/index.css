@@ -9,6 +9,10 @@ body {
 }
 
 
-.app {
+/* .app {
   margin: 0;
+} */
+:root {
+  --color:rgb(229, 9, 20,1);
+  --color5: rgba(45,45,45);    
 }

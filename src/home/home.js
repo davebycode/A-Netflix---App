@@ -7,12 +7,11 @@ const styling = {
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover', 
   backgroundPosition: 'center',
-  width: '100%',
+  width: '100vw',
   backgroundBlendMode:'darken',
-  height:'100%',
+  height:'100vh',
   paddingTop: '0',
   marginTop: '-1.8%',
-  Top:'0'
 }
   return (
     <div className='styles'>
