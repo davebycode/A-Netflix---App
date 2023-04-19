@@ -10,19 +10,15 @@ export default function Phone() {
 
   return (
     <div className='phone'>
+      
       <div className='main-texted'>
             <h1>Download your shows to watch offline.</h1>
             <h3>Save your favorites easily and always have something to watch.
             </h3>
             </div>
-
-      <img className='phone-pix' src='/pictures/mobiles.jpg' alt='phone'/>
-      <div className='small'>
-        
-        <h5>Stranger Things</h5>
-        <h6>Downloading...</h6>
-        
-      </div>
+            
+            <img className='phone-pix' src='/pictures/mobile.png' alt='phone'/>
+      
       
                 
 

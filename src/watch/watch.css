@@ -1,64 +1,89 @@
 :root {
-    --color1: black;
-    --color2: white;
-    --color3: gray;
-    --color4: blue;
-}
-.watcher {
-    background-color: var(--color1);
-    color: var(--color2);
-    margin-top: 1rem;
-    padding: 7% 0 7% 0;
-    width: 100%;
-    font-weight: bolder;
+    --color1:black;
+    --color2:white;
     
+
+}
+.watcher{
+    margin-top: 1rem;
+    background-color: var(--color1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
 }
 .watchers {
-    width: 36%;
+    color: var(--color2);
+    font-weight: bolder;
+    width: 39%;
+
 }
 .watchers h1 {
-    font-size: 3rem;
+font-size: 8.5rem;
 }
 .watchers h3 {
-    margin-top: -7%;
+font-size: 4.8rem;
+font-weight: lighter;
 }
-@media screen  and (min-width:250px) and (max-width:1020px){
-    .watcher {
+.watch-pix {
+    height: 60vh;
+}
+@media (orientation:portrait) {
+.watcher {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+
+}
+.watchers {
+    width: 100vw;
+    padding: 0 1rem;
+}
+.watchers h1 {
+    font-size: 2.3rem;
+    text-align: center;
+} 
+.watchers h3 {
+    font-size: 1.5rem;
+}
+.watch-pix {
+    width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 40vh;
+}
+}
+@media (500px <= width <= 550px) {
+    .watch-pix {
+        height: 60vh;
+    }
+}
+@media (600px <= width <= 850px) {
+    .watch-pix {
+        height: 55vh;
+    }
+    .watchers h3 {
+        padding: 0 1.5rem;
+    }
+}
+@media (1020px <= width <= 2000px) {
+    .watcher{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;
+        overflow: hidden;
     }
     .watchers {
-        width: 100%;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        
+        padding: 0 1rem;
+        width: 100vw;
     }
     .watchers h1 {
-        font-size: 2.5rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
+        font-size: 3rem;
     }
     .watchers h3 {
-        padding-left: 1.5rem;
-        padding-top: 2.5rem ;
-        padding-right: 1rem;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        font-weight: lighter;
     }
-}
-@media screen and (min-width:1250px) and (max-width:3000px){
-    .watchers {
-        padding-left: 4.5rem;
-    }
-    .watchers h1 {
-        font-size: 4rem;
-    }
-    .watchers h3 {
-        font-size: 2.3rem;
-        padding-top: 1rem;
-        font-weight: bold;
-        
-    }
+
 }

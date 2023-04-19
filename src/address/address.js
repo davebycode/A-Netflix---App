@@ -3,8 +3,9 @@ import './address.css'
 export default function Address() {
   return (
     <div className='twice'>
-        <h4>Questions? Contact us</h4> 
+         <h5>Questions? Contact us</h5>
         <div className='first'>
+        
             <div className='first-1'>
                 <h4>FAQ</h4>
                 <h4>Media Center</h4>
@@ -29,7 +30,7 @@ export default function Address() {
         </div>
       <div className='second'>
         <select name='English'>
-            <option value='English' style={{backgroundColor:'blue', color:"white"}}> English &#9207;</option>
+            <option value='English'> English &#9207;</option>
         </select>
         <h4 className='texting'>Netflix Nigeria</h4>
       </div>

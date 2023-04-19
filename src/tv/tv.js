@@ -10,7 +10,7 @@ export default function Tv() {
                 more.
             </h3>
             </div>
-            <img className='tv-pix' src='/pictures/tv.jpg' alt='tv'/>
+            <img className='tv-pix' src='/pictures/tvs.png' alt='tv'/>
         </div>
   )
 }

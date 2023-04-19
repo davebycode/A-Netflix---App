@@ -1,12 +1,13 @@
-/* .styles {
-    width: 100vw;
-    height: 100vh;
-  } */
+.styles {
+    width: fit-content;
+    overflow-x: hidden;
+    
+  }
   .navbar{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    margin-top: 1%;
+    padding: 0 1rem;
     }
     .navbar h1 {
         color: var(--color);
@@ -16,10 +17,9 @@
         background-color: var(--color);
         color: white;
         padding: 1rem 1rem;
-        border-radius: 5px;
+        border-radius: 1rem;
         font-weight: bolder;
         border: none;
-        margin-right: 1%;
         font-size: 4.2rem;
   }     
     .home-text{
@@ -52,7 +52,7 @@
       justify-content: center;
     }
      .nav-email input {
-        height: 8vh;
+        height: 10vh;
         width: 36%;
         background: var(--color5);
         margin-left: 3%;
@@ -64,10 +64,7 @@
         outline-style: solid;
         outline-color: white;
         outline-width: 1px;
-        border-width: 0.2rem;
-        border-inline-color: red;
-        border-inline-width: 2px;  
-        padding: 1rem;      
+        border-width: 0.2rem;   
         border: none;
         position: relative;
         text-align: start;
@@ -78,8 +75,6 @@
         left: -36%;
         font-size: 4rem;
         font-weight: bold;
-        transition: 0.2s ease;
-        transition-delay: 10s;
         line-height: 5px;
     }
     .nav-email button {
@@ -218,6 +213,5 @@
         padding-top: 1.5rem;
         padding-bottom: 2rem;
     }
-    
   }
   

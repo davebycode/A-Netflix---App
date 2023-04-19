@@ -18,7 +18,7 @@
 }
 .main-questions h1 {
     font-weight: bolder;
-    font-size: 2.5rem;
+    font-size: 8rem;
 }
 details {
     width: 100%;
@@ -29,14 +29,14 @@ details {
 summary {
     text-decoration: solid;
     text-align: start;
-    font-size: 1.5rem;
+    font-size: 6rem;
     color: var(--color2);
     font-weight: bolder;
-    padding-top: 1rem;
+    padding-top: 3.5rem;
     position: relative;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-bottom: 3.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     border-bottom: solid;
     border-bottom-color: var(--color1);
     list-style-type: none;
@@ -50,7 +50,7 @@ summary:hover{
 p {
     margin-top: 1rem;
     display: block;
-    font-size: 1.3rem;
+    font-size: 5rem;
     /* font-weight: bold; */
     text-align: start;
     padding-left: 1rem;
@@ -61,11 +61,11 @@ p {
 }
 details summary::after {
     content: '+';
-    font-size: 2.9rem;
+    font-size: 11rem;
     font-weight: lighter;
     right: 0;
     color: var(--color2);
-    top: 0.5px;
+    margin-top: -5rem;
     position: absolute;
 }
 details[open] summary::after{
@@ -76,6 +76,88 @@ details[open] summary::after{
 }
 .check {
     text-align: center;
-    font-weight: bold;
+    font-weight: lighter;
     margin-top: 1.5rem;
+    font-size: 5rem;
+}
+@media (orientation: portrait) {
+    .questions {
+        overflow: hidden;
+    }
+    .main-questions h1 {
+        font-size: 2.3rem;
+    }
+    summary {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    details summary::after {
+        font-size: 2rem;
+        margin-top: -2%;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .check {
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+    }
+
+}
+@media (600px <= width <= 850px) {
+    .check {
+        font-size: 1.7rem;
+        padding-bottom: 4rem;
+        padding-top: 2rem;
+    }
+    summary {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+    details summary::after {
+        font-size: 2.5rem;
+        margin-top: -3%;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+}
+@media (900px <= width <= 950px) {
+    summary {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+    details summary::after {
+        font-size: 2.5rem;
+        margin-top: -2%;
+    }
+    p {
+        font-size: 1.9rem;
+    }
+    .check {
+        font-size: 1.9rem;
+    }
+    .main-questions h1 {
+        font-size: 2.3rem;
+    }
+}
+@media (1020px <= width <= 2000px) {
+    summary {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+    details summary::after {
+        font-size: 2.5rem;
+        margin-top: -2%;
+    }
+    p {
+        font-size: 1.9rem;
+    }
+    .check {
+        font-size: 1.9rem;
+    }
+    .main-questions h1 {
+        font-size: 2.3rem;
+    }
+    
 }

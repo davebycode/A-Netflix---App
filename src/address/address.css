@@ -12,39 +12,127 @@
     margin-top: 1rem;
     color: var(--color7);
     padding: 5rem;
+    padding-bottom: 10rem;
 }
-h4 {
+.twice h5, .first-1 h4 {
     text-decoration: underline;
     text-decoration-color: var(--color2);
     text-decoration-thickness: 0.5px;
+    font-size: 4rem;
 }
+.twice h5 {
+    text-align: left;
+    margin-left: 12%;
+}
+
 .first {
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-evenly;
     gap: 9.5rem;
 }
-select {
-    padding: 0.4rem 1rem;
+/* select {
+    padding: 2rem 2rem;
     font-weight: bold;
     background-color: var(--color1);
     color: var(--color2);
     margin-top: 2rem;
     border-radius: 5px;
     appearance:none;
-    position: relative;
+    font-size: 3rem;
+    
 }
-select::after {
-    content: "+";
-    position: absolute;
-    right: 0;
-    color: yellow;
-    height: 10rem;
-    width: 10rem;
-    top: 0;
-    font-size: 5rem;
+select[open]::after option {
+    background-color: blue;
+    color: white;
 
         
+} */
+select, option {
+    font-size: 3.5rem;
+    background-color: var(--color1);
+    color: var(--color2);
+    appearance: none;
+    padding: 1rem;
+    width: 10vw;
+    height: 8vh;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 12%;
 }
+select>option {
+    background-color: blue;
+}
+
 .texting {
     text-decoration: none;
+    font-size: 4rem;
+    padding-top: 3rem;
+    margin-left: 12%;
+}
+@media (orientation:portrait) {
+    .twice {
+        overflow: hidden;
+    }
+    .twice h5, .first-1 h4 {
+        font-size: 1rem;
+    }
+    .twice h5 {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        margin-left: -2%;
+    }
+    .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1px;
+    }
+    .first-1 {
+        padding-bottom: 0;
+    }
+    select {
+        width: 40vw;
+        height: 10 vh;
+        color: var(--color2);
+        font-size: 1rem;
+        margin-left: -5%;
+    }
+    option {
+        width: 10vw;
+        height: 10vh;
+        color: var(--color2);
+        font-size: 0.7rem;
+        margin-left: -5%;
+        padding: 0;
+    }
+    .texting {
+        font-size: 1.5rem;
+        margin-left: -3%;
+        margin-top: -5%;
+    }
+}
+@media (600px <= width <= 850px) {
+    .twice h5, .first-1 h4, select {
+        font-size: 1.5rem;
+    }
+}
+@media (1020px <= width <= 2000px) {
+    .twice {
+        overflow: hidden;
+    }
+    .twice h5, .first-1 h4, select, .twice h4 {
+        font-size: 1.5rem;
+    }
+    .twice h5, select, .twice h4 {
+        margin-left: -1%;
+    }
+    .twice h4 {
+        margin-top: -2%;
+    }
+
+    select {
+        width: 18vw;
+        height: 11vh;
+    }
 }
