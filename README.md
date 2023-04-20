@@ -1,1 +1,1 @@
-## This best describes the designing of the movie app!
+## A Netflix cloning!
