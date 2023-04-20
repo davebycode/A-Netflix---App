@@ -80,6 +80,57 @@ details[open] summary::after{
     margin-top: 1.5rem;
     font-size: 5rem;
 }
+.nav-emails {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.nav-emails input {
+    height: 10vh;
+    width: 36%;
+    background: var(--color5);
+    margin-left: 3%;
+    border-radius: 5px;
+    color: white;
+    border-style: solid;
+    border-color: gray;
+    outline: thick;
+    outline-style: solid;
+    outline-color: white;
+    outline-width: 1px;
+    border-width: 0.2rem;   
+    border: none;
+    position: relative;
+    text-align: start;
+    font-size: 3rem;
+}
+ .nav-emails label {
+    position: relative;
+    left: -36%;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 5px;
+}
+.nav-emails button {
+    height: 10vh;
+    width: 15vw;
+    font-weight: bolder;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 3.7rem;
+    border: none;
+    margin-left: -8%;
+    text-align: center;
+    background-color: var(--color);
+
+}
+.nav-emails input:focus +label {
+    top: -59px;
+  
+}
+
 @media (orientation: portrait) {
     .questions {
         overflow: hidden;
@@ -102,7 +153,38 @@ details[open] summary::after{
         font-size: 1.2rem;
         padding-bottom: 2rem;
     }
+    .nav-emails {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-emails input {
+        height: 10vh;
+        width: 59vw;
+        margin-top: -5%;
+        font-size: 1.7rem;
+    }
+    .nav-emails label {
+        font-size: 1rem;
+        margin-left: 48%;
+        margin-top: -12%;
+    }
+    .nav-emails button {
+        width: 50vw;
+        height: 7vh;
+        margin-top: 14%;
+        font-size: 1rem;
+    }
 
+}
+@media (500px <= width <= 550px) {
+    .nav-emails label {
+        top: 15px;
+        /* margin-left: 0.2%; */
+    }
+    .nav-emails input:focus + label {
+        top: -10px;
+    }
+    
 }
 @media (600px <= width <= 850px) {
     .check {
@@ -120,6 +202,15 @@ details[open] summary::after{
     }
     p {
         font-size: 1.8rem;
+    }
+    .nav-emails label, .nav-emails button, .nav-emails input {
+       font-size: 2rem; 
+    }
+    .nav-emails label {
+        margin-top: -8%;
+    }
+    .nav-emails input:focus + label {
+        top: -30px;
     }
 }
 @media (900px <= width <= 950px) {
@@ -140,6 +231,15 @@ details[open] summary::after{
     .main-questions h1 {
         font-size: 2.3rem;
     }
+    .nav-emails label, .nav-emails button, .nav-emails input {
+        font-size: 2rem; 
+     }
+     .nav-emails label {
+        margin-top: -8%;
+    }
+    .nav-emails input:focus + label {
+        top: -30px;
+    }
 }
 @media (1020px <= width <= 2000px) {
     summary {
@@ -159,5 +259,23 @@ details[open] summary::after{
     .main-questions h1 {
         font-size: 2.3rem;
     }
+    .nav-emails label {
+        margin-top: -1%;
+    }
+    .nav-emails input:focus + label {
+        top: -30px;
+    }
+    .nav-emails input {
+        width: 35vw;
+        height: 15vh;
+    }
+    .nav-emails label, .nav-emails button, .nav-emails input {
+        font-size: 2rem; 
+     }
+     .nav-emails button {
+        width: 30vw;
+        height: 15vh;
+        margin-left: -15%;
+     }
     
 }

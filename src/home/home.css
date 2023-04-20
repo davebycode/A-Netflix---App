@@ -110,10 +110,12 @@
         margin-top: -6%;
     }
     .navbar h1{
-        font-size: 3rem; 
+        font-size: 2.3rem; 
     }
     .navbar button {
-        font-size: 1.3rem;
+        font-size: 1rem;
+        padding: -0.5rem;
+        border-radius: 0.5rem;
     }
     .home-text h4 {
         font-size: 1.7rem;
@@ -125,7 +127,7 @@
     }
     .nav-email input {
         width: 65vw;
-        height: 5vh;
+        height: 10vh;
         font-size: 1.5rem;
         margin-top: -5%;
     }
@@ -141,7 +143,7 @@
         margin-top: 10%;
         width: 70vw;
         font-size: 1.5rem;
-        height: 7vh;
+        height: 9vh;
         padding-top: 1rem;
         padding-bottom: 1rem;
         margin-left: 3%;
@@ -150,6 +152,12 @@
   @media  (600px <= width <= 850px){
     .navbar {
         margin-top: 1%;
+    }
+    .navbar h1 {
+        font-size: 3rem;
+    }
+    .navbar button {
+        font-size: 1.7rem;
     }
     .home-text h1 {
         font-size: 4rem;
@@ -164,7 +172,7 @@
         font-size: 2rem;
     }
     .nav-email input {
-        height: 11vw;
+        height: 11vh;
         font-size: 1.6rem;
     }
     .nav-email button {
@@ -172,6 +180,10 @@
     }
   }
   @media (1020px <= width <= 2000px) {
+    .styles {
+        height: 100vh;
+        padding-bottom: 5rem;
+    }
     .navbar {
         margin-top: -1%;
     }
@@ -198,7 +210,11 @@
     }
     .nav-email input {
         width: 45vw;
-        height: 8vh;
+        height: 15vh;
+        font-size: 1.5em;
+    }
+    .nav-email input:focus + label {
+        top: -27px;
     }
     .nav-email label {
        text-align: left;

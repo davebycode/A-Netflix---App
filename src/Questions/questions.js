@@ -65,7 +65,7 @@ export default function Questions() {
       </div>
       </div>
         <h3 className='check'>Ready to watch? Enter your email to create or restart your membership.</h3>
-        <div className='nav-email'>
+        <div className='nav-emails'>
         <input type='email'></input>
         <label>Email address</label>
         <button>Get Started <i class="fa-solid fa-chevron-right"></i></button>
