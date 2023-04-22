@@ -1,5 +1,5 @@
 .styles {
-    width: fit-content;
+    height: 100vh;
     overflow-x: hidden;
     
   }
@@ -101,24 +101,24 @@
       overflow: hidden;
     }
     .home-text h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .home-text h3 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .navbar {
         margin-top: -6%;
     }
     .navbar h1{
-        font-size: 2.3rem; 
+        font-size: 2.1rem; 
     }
     .navbar button {
         font-size: 1rem;
-        padding: -0.5rem;
+        padding: 0.5rem;
         border-radius: 0.5rem;
     }
     .home-text h4 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin-top: -2%;
     }
     .nav-email {
@@ -133,7 +133,7 @@
     }
     .nav-email label {
         margin-left: 42%;
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: -8%;
     }
     .nav-email input:focus + label {
@@ -142,7 +142,7 @@
     .nav-email button {
         margin-top: 10%;
         width: 70vw;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         height: 9vh;
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -180,28 +180,28 @@
     }
   }
   @media (1020px <= width <= 2000px) {
-    .styles {
-        height: 100vh;
-        padding-bottom: 5rem;
-    }
+    /* .styles {
+        min-height: 100vh;
+        
+    } */
     .navbar {
         margin-top: -1%;
     }
     .navbar button {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .navbar h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     .home-text h4 {
-        font-size:2rem;
+        font-size: 1.5rem;
         margin-top: -2%;      
      }
     .home-text h3 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .home-text h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     .nav-email {
         display: flex;
@@ -211,7 +211,7 @@
     .nav-email input {
         width: 45vw;
         height: 15vh;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .nav-email input:focus + label {
         top: -27px;
@@ -219,12 +219,12 @@
     .nav-email label {
        text-align: left;
        margin-left: -8%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .nav-email button {
-        width: 39vw;
+        width: 30vw;
         margin-left: -1%;
-        font-size: 2rem;
+        font-size: 1.5rem;
         height: 14vh;
         padding-top: 1.5rem;
         padding-bottom: 2rem;

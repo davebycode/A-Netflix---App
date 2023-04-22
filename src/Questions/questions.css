@@ -136,18 +136,18 @@ details[open] summary::after{
         overflow: hidden;
     }
     .main-questions h1 {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
     }
     summary {
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding: 1rem;
     }
     details summary::after {
-        font-size: 2rem;
-        margin-top: -2%;
+        font-size: 1.8rem;
+        margin-top: -3%;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .check {
         font-size: 1.2rem;
@@ -161,10 +161,10 @@ details[open] summary::after{
         height: 10vh;
         width: 59vw;
         margin-top: -5%;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
     .nav-emails label {
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-left: 48%;
         margin-top: -12%;
     }
@@ -172,7 +172,7 @@ details[open] summary::after{
         width: 50vw;
         height: 7vh;
         margin-top: 14%;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
 }
@@ -188,23 +188,23 @@ details[open] summary::after{
 }
 @media (600px <= width <= 850px) {
     .check {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         padding-bottom: 4rem;
         padding-top: 2rem;
     }
     summary {
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding: 1.5rem;
     }
     details summary::after {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         margin-top: -3%;
     }
     p {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     .nav-emails label, .nav-emails button, .nav-emails input {
-       font-size: 2rem; 
+       font-size: 1.7rem; 
     }
     .nav-emails label {
         margin-top: -8%;
@@ -215,24 +215,24 @@ details[open] summary::after{
 }
 @media (900px <= width <= 950px) {
     summary {
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding: 1.5rem;
     }
     details summary::after {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-top: -2%;
     }
     p {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
     .check {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
     .main-questions h1 {
         font-size: 2.3rem;
     }
     .nav-emails label, .nav-emails button, .nav-emails input {
-        font-size: 2rem; 
+        font-size: 1.7rem; 
      }
      .nav-emails label {
         margin-top: -8%;
@@ -243,21 +243,21 @@ details[open] summary::after{
 }
 @media (1020px <= width <= 2000px) {
     summary {
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding: 1.5rem;
     }
     details summary::after {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         margin-top: -2%;
     }
     p {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
     .check {
-        font-size: 1.9rem;
+        font-size: 1.4rem;
     }
     .main-questions h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
     .nav-emails label {
         margin-top: -1%;
@@ -270,7 +270,7 @@ details[open] summary::after{
         height: 15vh;
     }
     .nav-emails label, .nav-emails button, .nav-emails input {
-        font-size: 2rem; 
+        font-size: 1.7rem; 
      }
      .nav-emails button {
         width: 30vw;

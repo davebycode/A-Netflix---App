@@ -21,10 +21,10 @@
     padding-left: 11rem;
 }
 .main-texted h1 {
-    font-size: 8rem;
+    font-size: 6rem;
 }
 .main-texted h3 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: lighter;
 }
 .phone-pix {
@@ -49,10 +49,10 @@
         padding: 0 1rem;
     }
     .main-texted h1 {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
     }
     .main-texted h3 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .phone-pix {
         width: 122vw;
@@ -79,10 +79,10 @@
         padding-left: 1rem;
     }
     .main-texted h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .main-texted h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .phone-pix {
         padding-right: 0;
